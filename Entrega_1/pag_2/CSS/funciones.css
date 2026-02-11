@@ -249,6 +249,101 @@ footer {
     background: var(--degradado-hr);
 }
 
+@media (max-width: 800px) {
 
- 
+/* ---------------------------------------------------MENÚ---------------------------------------------- */
 
+    .menu {
+        margin: 0 1rem;
+    }
+
+    .titulo {
+        font-size: 1rem;
+    }
+
+    .secciones {
+        gap: 1rem;
+    }
+
+    .titulo-seccion {
+        font-size: 0.8rem;
+    }
+
+/* ---------------------------------------------------SECCIÓN 1 FUNCIONES---------------------------------------------- */
+    .seccion-1-funciones {
+        padding: 0rem 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .seccion-1-funciones h1 {
+        font-size: 2.5rem;
+    }
+
+    .seccion-1-funciones p {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+/* ---------------------------------------------------SECCIÓN 2 FUNCIONES---------------------------------------------- */
+    .seccion-2-funciones {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 1rem;
+        justify-items: center;
+    }
+
+    .div-seccion-2-funciones {
+        margin: 0 2rem;
+        max-width: 600px;
+    }
+
+    .div-seccion-2-funciones-2 {
+        margin: 0 2rem;
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .seccion-2-funciones h2 {
+        font-size: 1.8rem;
+        min-width: auto;
+    }
+
+    .seccion-2-funciones p {
+        font-size: 1rem;
+    }
+
+    .letreros {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+    }
+
+    .letreros span {
+        font-size: 0.75rem;
+        padding: 8px;
+    }
+
+/* ---------------------------------------------------FOOTER---------------------------------------------- */
+    .condiciones-footer {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .secciones-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    .div-seccion-2-funciones,
+    .div-seccion-2-funciones-2 {
+        max-width: 500px;
+    }
+
+    .letreros span {
+        font-size: 0.85rem;
+    }
+}

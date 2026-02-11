@@ -446,6 +446,126 @@ footer {
     background: var(--degradado-hr);
 }
 
+@media (max-width: 800px) {
+
+/* ---------------------------------------------------MENÚ---------------------------------------------- */
+
+    .menu {
+        margin: 0 1rem;
+    }
+
+    .titulo {
+        font-size: 1rem;
+    }
+
+    .secciones {
+        gap: 1rem;
+    }
+
+    .titulo-seccion {
+        font-size: 0.8rem;
+    }
+
+/* ---------------------------------------------------SECCIÓN 1 INICIO---------------------------------------------- */
+    .seccion-1-inicio {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin: 2rem 1rem;
+    }
+
+    .contenido-1-seccion-1-inicio h1 {
+        font-size: 2.5rem;
+    }
+
+    .contenido-1-seccion-1-inicio span {
+        font-size: 2.3rem;
+    }
+
+    .contenido-1-seccion-1-inicio p {
+        font-size: 1rem;
+    }
+
+    .contenido-2-seccion-1-inicio {
+        margin: 0;
+        padding: 1rem;
+    }
+
+/* ---------------------------------------------------SECCIÓN 2 INICIO---------------------------------------------- */
+    .seccion-2-inicio {
+        margin-top: 4rem;
+        padding: 1rem;
+    }
+
+    .seccion-2-inicio h1 {
+        font-size: 2rem;
+    }
+
+    .seccion-2-inicio p {
+        font-size: 1rem;
+    }
+
+    .contenido-2-seccion-2-inicio {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+/* ---------------------------------------------------SECCIÓN 3 INICIO---------------------------------------------- */
+    .seccion-3-inicio {
+        margin-top: 4rem;
+        padding: 1rem;
+    }
+
+    .seccion-3-inicio h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .seccion-3-inicio p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .dispositivos-compatibles {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+/* ---------------------------------------------------SECCIÓN 4 INICIO---------------------------------------------- */
+    .seccion-4-inicio {
+        padding: 2rem 1rem;
+    }
+
+    .contenido-1-seccion-4-inicio {
+        padding: 3rem 1.5rem;
+    }
+
+    .contenido-1-seccion-4-inicio h1 {
+        font-size: 2rem;
+    }
+
+    .contenido-1-seccion-4-inicio p {
+        font-size: 1rem;
+    }
+
+/* ---------------------------------------------------FOOTER---------------------------------------------- */
+    .condiciones-footer {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .secciones-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    .contenido-2-seccion-2-inicio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 
 
 

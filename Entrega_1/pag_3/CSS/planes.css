@@ -350,12 +350,14 @@ footer {
 }
 
 @media (max-width: 800px) {
+
+/* ---------------------------------------------------MENÚ---------------------------------------------- */
     .menu {
         margin: 0 1rem;
     }
 
     .titulo {
-    font-size: 1rem;
+        font-size: 1rem;
     }
 
     .secciones {
@@ -363,9 +365,10 @@ footer {
     }
 
     .titulo-seccion {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
+/* ---------------------------------------------------SECCIÓN 1 PLANES---------------------------------------------- */
     .contenido-1-seccion-1-planes {
         padding: 2rem;
     }
@@ -379,6 +382,7 @@ footer {
         text-align: center;
     }
 
+/* ---------------------------------------------------SECCIÓN 2 PLANES---------------------------------------------- */
     .seccion-2-planes {
         grid-template-columns: 1fr;
         margin: 2rem;
@@ -400,6 +404,7 @@ footer {
         text-align: left;
     }
 
+/* ---------------------------------------------------SECCIÓN 3 FORMULARIO---------------------------------------------- */
     .div-formulario {
         width: 90%;
     }
@@ -408,6 +413,7 @@ footer {
         font-size: 2rem;
     }
 
+/* ---------------------------------------------------FOOTER---------------------------------------------- */
     .condiciones-footer {
         flex-direction: column;
         gap: 1.5rem;
