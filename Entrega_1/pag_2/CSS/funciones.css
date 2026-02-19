@@ -4,7 +4,7 @@
     --color-secundario-texto: #A0A0A0;
     --degradado-1: linear-gradient(135deg, #0A84FF 0%, #5E5CE6 100%);
     --degradado-2: linear-gradient(180deg, #18262B 0%, #1A1A1A 40%);
-    --degradado-hr: linear-gradient(to right,transparent,rgba(255,255,255,0.2),transparent);
+    --degradado-hr: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
 }
 
 * {
@@ -31,10 +31,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    margin: 0 2rem 0 2rem; /*maregn de arriba / margen de izquierda / margen de abajo / margen de derecha */
-    padding: 1.5rem 2rem 1.5rem 2rem;   
-    
+    margin: 0 2rem 0 2rem;
+    /*maregn de arriba / margen de izquierda / margen de abajo / margen de derecha */
+    padding: 1.5rem 2rem 1.5rem 2rem;
+
 }
+
 .titulo {
     font-size: 1.6rem;
     font-weight: 700;
@@ -53,7 +55,7 @@ header {
 
 .secciones a {
     text-decoration: none;
-    color:var(--color-secundario-texto);
+    color: var(--color-secundario-texto);
 }
 
 
@@ -90,10 +92,11 @@ header {
 .titulo-seccion-activo::after {
     width: 100%;
 }
+
 /* ---------------------------------------------------SECCIÓN 1 FUNCIONES-------------------------------------------------------- */
 .seccion-1-funciones {
-    align-items: center;  
-    padding: 2rem;  
+    align-items: center;
+    padding: 2rem;
     margin-top: 2rem;
 }
 
@@ -107,9 +110,9 @@ header {
 .seccion-1-funciones h1 {
     font-size: 4rem;
     font-weight: 700;
-    text-align: center;      
-    max-width: 90%;       
-    margin: 0 auto 1.5rem;   
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto 1.5rem;
     line-height: 1.6;
 }
 
@@ -124,7 +127,7 @@ header {
 /* ---------------------------------------------------SECCIÓN 2 FUNCIONES-------------------------------------------------------- */
 
 .seccion-2-funciones {
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
     margin-top: 2rem;
@@ -161,7 +164,7 @@ header {
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    margin: 1rem 1rem 0 0;
 }
 
 
@@ -186,7 +189,7 @@ header {
     background: var(--degradado-2);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
     display: grid;
-    grid-template-columns: repeat(2,2fr);
+    grid-template-columns: repeat(2, 2fr);
     gap: 1rem;
     margin: 3rem 1rem 1rem 3rem;
     border-radius: 30px;
@@ -197,7 +200,7 @@ header {
 /* ---------------------------------------------------FOOTER-------------------------------------------------------- */
 footer {
     background-color: #1A1A1A;
-    padding: 3rem 2rem 3rem 2rem;  
+    padding: 3rem 2rem 3rem 2rem;
     width: 100%;
     align-items: center;
     margin-top: 5rem;
@@ -225,7 +228,7 @@ footer {
 
 .secciones-footer a {
     text-decoration: none;
-    color:var(--color-secundario-texto);
+    color: var(--color-secundario-texto);
     font-size: 1rem;
     font-weight: 500;
 }
@@ -242,16 +245,16 @@ footer {
 }
 
 .linea-footer {
-    width: 90%;            
+    width: 90%;
     height: 1px;
-    border: none;           
-    margin: 0 auto 1.5rem;  
+    border: none;
+    margin: 0 auto 1.5rem;
     background: var(--degradado-hr);
 }
 
 @media (max-width: 800px) {
 
-/* ---------------------------------------------------MENÚ---------------------------------------------- */
+    /* ---------------------------------------------------MENÚ---------------------------------------------- */
 
     .menu {
         margin: 0 1rem;
@@ -269,7 +272,7 @@ footer {
         font-size: 0.8rem;
     }
 
-/* ---------------------------------------------------SECCIÓN 1 FUNCIONES---------------------------------------------- */
+    /* ---------------------------------------------------SECCIÓN 1 FUNCIONES---------------------------------------------- */
     .seccion-1-funciones {
         padding: 0rem 2rem;
         display: flex;
@@ -285,7 +288,7 @@ footer {
         margin-bottom: 0;
     }
 
-/* ---------------------------------------------------SECCIÓN 2 FUNCIONES---------------------------------------------- */
+    /* ---------------------------------------------------SECCIÓN 2 FUNCIONES---------------------------------------------- */
     .seccion-2-funciones {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -324,7 +327,7 @@ footer {
         padding: 8px;
     }
 
-/* ---------------------------------------------------FOOTER---------------------------------------------- */
+    /* ---------------------------------------------------FOOTER---------------------------------------------- */
     .condiciones-footer {
         flex-direction: column;
         gap: 1.5rem;
@@ -338,6 +341,7 @@ footer {
 }
 
 @media (min-width: 600px) and (max-width: 800px) {
+
     .div-seccion-2-funciones,
     .div-seccion-2-funciones-2 {
         max-width: 500px;
