@@ -1,0 +1,335 @@
+:root {
+    font-family: 'Sora', sans-serif;
+    --color-principal-texto: #0A84FF;
+    --color-secundario-texto: #A0A0A0;
+    --degradado-1: linear-gradient(135deg, #0A84FF 0%, #5E5CE6 100%);
+    --degradado-2: linear-gradient(180deg, #18262B 0%, #1A1A1A 40%);
+    --degradado-hr: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: #161515;
+}
+
+
+/* ---------------------------------------------------MENÚ INICIO---------------------------------------------- */
+header {
+    background-color: #0D0D0D;
+    position: sticky;
+    top: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem 0 2rem; /*margen de arriba / margen de derecha / margen de abajo / margen de izquierda */
+    padding: 1.5rem 2rem 1.5rem 2rem;
+
+}
+
+.titulo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-principal-texto);
+}
+
+#titulo-seccion-activo {
+    color: var(--color-principal-texto);
+}
+
+.secciones {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.secciones a {
+    text-decoration: none;
+    color: var(--color-secundario-texto);
+}
+
+
+.titulo-seccion {
+    position: relative;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.titulo-seccion a:hover {
+    color: white;
+}
+
+/* underline base */
+.titulo-seccion::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: var(--degradado-1);
+    transition: width 0.3s ease;
+}
+
+/* hover */
+.titulo-seccion:hover::after {
+    width: 100%;
+}
+
+/* estado activo */
+.titulo-seccion-activo::after {
+    width: 100%;
+}
+
+/* ---------------------------------------------------SECCIÓN 1 FUNCIONES-------------------------------------------------------- */
+.seccion-1-funciones {
+    align-items: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.div-seccion-1-funciones {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion-1-funciones h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+}
+
+.seccion-1-funciones p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-secundario-texto);
+    margin-bottom: 4rem;
+}
+
+/* ---------------------------------------------------SECCIÓN 2 FUNCIONES-------------------------------------------------------- */
+
+.seccion-2-funciones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.div-seccion-2-funciones {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 4rem;
+    align-items: flex-start;
+}
+
+
+.seccion-2-funciones h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    min-width: 300px;
+
+}
+
+.seccion-2-funciones p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-secundario-texto);
+    margin-bottom: 1rem;
+}
+
+.letreros {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem 0 0;
+}
+
+
+.letreros p {
+    background-color: #242424;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-principal-texto);
+}
+
+.letreros p:hover {
+    cursor: pointer;
+    background-color: var(--color-principal-texto);
+    color: white;
+}
+
+.div-seccion-2-funciones-2 {
+    background: var(--degradado-2);
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);
+    margin: 3rem 1rem 1rem 3rem;
+    border-radius: 30px;
+    padding: 2rem;
+}
+
+
+/* ---------------------------------------------------FOOTER-------------------------------------------------------- */
+footer {
+    background-color: #1A1A1A;
+    padding: 3rem 2rem 3rem 2rem;
+    width: 100%;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.condiciones-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+
+.titulo-footer {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-principal-texto);
+}
+
+.secciones-footer {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.secciones-footer a {
+    text-decoration: none;
+    color: var(--color-secundario-texto);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+.titulo-seccion-footer {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-principal-texto);
+}
+
+.derechos-footer {
+    text-align: center;
+}
+
+.linea-footer {
+    width: 90%;
+    height: 1px;
+    border: none;
+    margin: 0 auto 1.5rem;
+    background: var(--degradado-hr);
+}
+
+@media (max-width: 800px) {
+
+    /* ---------------------------------------------------MENÚ---------------------------------------------- */
+
+    .menu {
+        margin: 0 1rem;
+    }
+
+    .titulo {
+        font-size: 1rem;
+    }
+
+    .secciones {
+        gap: 1rem;
+    }
+
+    .titulo-seccion {
+        font-size: 0.8rem;
+    }
+
+    /* ---------------------------------------------------SECCIÓN 1 FUNCIONES---------------------------------------------- */
+    .seccion-1-funciones {
+        padding: 0rem 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .seccion-1-funciones h1 {
+        font-size: 2.5rem;
+    }
+
+    .seccion-1-funciones p {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    /* ---------------------------------------------------SECCIÓN 2 FUNCIONES---------------------------------------------- */
+    .seccion-2-funciones {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 1rem;
+        justify-items: center;
+    }
+
+    .div-seccion-2-funciones {
+        margin: 0 2rem;
+        max-width: 600px;
+    }
+
+    .div-seccion-2-funciones-2 {
+        margin: 0 2rem;
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .seccion-2-funciones h2 {
+        font-size: 1.8rem;
+        min-width: auto;
+    }
+
+    .seccion-2-funciones p {
+        font-size: 1rem;
+    }
+
+    .letreros {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+    }
+
+    .letreros p {
+        font-size: 0.75rem;
+        padding: px;
+    }
+
+    /* ---------------------------------------------------FOOTER---------------------------------------------- */
+    .condiciones-footer {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .secciones-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}

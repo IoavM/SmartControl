@@ -1,0 +1,424 @@
+:root {
+    font-family: 'Sora', sans-serif;
+    --color-principal-texto: #0A84FF;
+    --color-secundario-texto: #A0A0A0;
+    --degradado-1: linear-gradient(135deg, #0A84FF 0%, #5E5CE6 100%);
+    --degradado-2: linear-gradient(180deg, #18262B 0%, #1A1A1A 40%);
+    --degradado-hr: linear-gradient(to right,transparent,rgba(255,255,255,0.2),transparent);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: #161515;
+}
+
+
+/* ---------------------------------------------------MENÚ---------------------------------------------- */
+header {
+    background-color: #0D0D0D;
+    position: sticky;
+    top: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem 0 2rem; /*margen de arriba / margen de derecha / margen de abajo / margen de izquierda */
+    padding: 1.5rem 2rem 1.5rem 2rem;   
+    
+}
+.titulo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-principal-texto);
+}
+
+#titulo-seccion-activo {
+    color: var(--color-principal-texto);
+}
+
+.secciones {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.secciones a {
+    text-decoration: none;
+    color:var(--color-secundario-texto);
+}
+
+
+.titulo-seccion {
+    position: relative;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.titulo-seccion a:hover {
+    color: white;
+}
+
+/* underline base */
+.titulo-seccion::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: var(--degradado-1);
+    transition: all 0.3s ease;
+}
+
+/* hover */
+.titulo-seccion:hover::after {
+    width: 100%;
+}
+
+/* ---------------------------------------------------SECCION 1---------------------------------------------- */
+.seccion-1-planes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 2rem 2rem 2rem; /*margen de arriba / margen de derecha / margen de abajo / margen de izquierda */
+    
+}
+
+.contenido-1-seccion-1-planes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 2rem 10rem 2rem 10rem;  
+    gap: 1rem;
+}
+
+.contenido-1-seccion-1-planes h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.contenido-1-seccion-1-planes p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-secundario-texto);
+    text-align: center;
+}
+
+/* ---------------------------------------------------SECCION 2---------------------------------------------- */
+.seccion-2-planes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: start;
+    margin: 4rem 4rem 4rem 4rem; /*margen de arriba / margen de derecha / margen de abajo / margen de izquierda */
+    gap: 2rem;
+}
+
+.tarjeta-planes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    padding: 3rem 3rem 3rem 3rem;  
+    gap: 1rem;
+    background-color: #242424;
+    border-radius: 25px;
+}
+
+.tarjeta-planes:hover {
+    box-shadow: 0 0 15px var(--color-principal-texto);
+}
+
+.info-basica {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 1rem;
+}
+
+.info-basica h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.info-basica h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-principal-texto);
+}
+
+.info-basica h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-secundario-texto);
+}
+
+.linea-tarjeta {
+    width: 90%;            
+    height: 1px;
+    border: none;           
+    margin: 0 auto 1.5rem;  
+    background: var(--degradado-hr);
+}
+
+.lista-info-detalle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+.lista-info-detalle li {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-secundario-texto);
+}
+
+.lista-info-detalle li::marker {
+    color: var(--color-principal-texto);
+}
+
+.boton-planes {
+    background-color: #3f3e3e;
+    font-family: 'Sora', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem 3rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.boton-planes:hover {
+    transform: translateY(-5px);
+    background-color: var(--color-principal-texto);
+}
+
+/* ---------------------------------------------------SECCIÓN 3 FORMULARIO-------------------------------------------------------- */
+
+.seccion-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.div-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2rem 2rem 2rem;
+    gap: 1rem;
+    background-color: #242424;
+    border-radius: 25px;
+    width: 45%;
+}
+
+.seccion-formulario h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;             
+    line-height: 1.6;
+}
+
+.seccion-formulario p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-secundario-texto);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.formulario-input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background: #1e1e1e;
+    color: white;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.formulario-input:focus {
+    outline: none;
+    border-color: var(--color-principal-texto);
+}
+
+.boton-formulario {
+    background-color: #3f3e3e;
+    font-family: 'Sora', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem 3rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.boton-formulario:hover {
+    background-color: var(--color-principal-texto);
+}
+
+
+/* ---------------------------------------------------FOOTER-------------------------------------------------------- */
+footer {
+    background-color: #1A1A1A;
+    padding: 3rem 2rem 3rem 2rem;  
+    width: 100%;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.condiciones-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+
+.titulo-footer {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-principal-texto);
+}
+
+.secciones-footer {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.secciones-footer a {
+    text-decoration: none;
+    color:var(--color-secundario-texto);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+.titulo-seccion-footer {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-principal-texto);
+}
+
+.derechos-footer {
+    text-align: center;
+}
+
+.linea-footer {
+    width: 90%;            
+    height: 1px;
+    border: none;           
+    margin: 0 auto 1.5rem;  
+    background: var(--degradado-hr);
+}
+
+@media (max-width: 800px) {
+
+/* ---------------------------------------------------MENÚ---------------------------------------------- */
+    .menu {
+        margin: 0 1rem;
+    }
+
+    .titulo {
+        font-size: 1rem;
+    }
+
+    .secciones {
+        gap: 1rem;
+    }
+
+    .titulo-seccion {
+        font-size: 0.8rem;
+    }
+
+/* ---------------------------------------------------SECCIÓN 1 PLANES---------------------------------------------- */
+    .contenido-1-seccion-1-planes {
+        padding: 2rem;
+    }
+
+    .contenido-1-seccion-1-planes h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .contenido-1-seccion-1-planes p {
+        text-align: center;
+    }
+
+/* ---------------------------------------------------SECCIÓN 2 PLANES---------------------------------------------- */
+    .seccion-2-planes {
+        grid-template-columns: 1fr;
+        margin: 2rem;
+    }
+
+    .tarjeta-planes {
+        padding: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .info-basica {
+        align-items: center;
+        text-align: center;
+    }
+
+    .lista-info-detalle {
+        align-items: left;
+        text-align: left;
+    }
+
+/* ---------------------------------------------------SECCIÓN 3 FORMULARIO---------------------------------------------- */
+    .div-formulario {
+        width: 90%;
+    }
+
+    .seccion-formulario h1 {
+        font-size: 2rem;
+    }
+
+/* ---------------------------------------------------FOOTER---------------------------------------------- */
+    .condiciones-footer {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .secciones-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .derechos-footer {
+        text-align: center;
+    }
+}
