@@ -1,5 +1,4 @@
 :root {
-    font-family: 'Sora', sans-serif;
     --color-principal-texto: #0A84FF;
     --color-secundario-texto: #A0A0A0;
     --degradado-1: linear-gradient(135deg, #0A84FF 0%, #5E5CE6 100%);
@@ -12,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
+    font-family: 'Sora', sans-serif;
 }
 
 body {
